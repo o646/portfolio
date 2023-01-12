@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom"
+
 function Navbar() {
     return (
         <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
@@ -7,18 +9,19 @@ function Navbar() {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item nav-link">
+                            {/* <a class="nav-link active" aria-current="page" href="#">Home</a> */}
+                        <NavLink  class='active' to= '/'>Home</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
+                        <li class="nav-item nav-link">
+                        <NavLink   to= '/skills'>Skills</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                        <li class="nav-item nav-link">
+                        <NavLink   to= '/projects'>Projects</NavLink>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Contact</a>
+                        <li class="nav-item nav-link">
+                        <NavLink   to= '/contact'>Contact</NavLink>
                         </li>
                     </ul>
                 </div>

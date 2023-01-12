@@ -7,16 +7,15 @@ import skills from './pages/skills';
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Navbar />
     <div className="container">
-      
-      <BrowserRouter>
       <Route path= '/' component={home}  exact/>
       <Route path= '/projects' component={projects} />
       <Route path= '/contact' component={contact} />
       <Route path= '/skills' component={skills} />
-      </BrowserRouter>
       </div>
+      </BrowserRouter>
  </div>
   );
 }
