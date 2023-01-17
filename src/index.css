@@ -1,11 +1,21 @@
 * {
-padding: 0;
-margin: 0;
-box-sizing: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 .active {
   color: yellow;
 }
-a{
+
+a {
   text-decoration: none !important;
+}
+
+.contact-item {
+  display: flex;
+}
+
+.contact-item i {
+  margin-right: 10px;
 }
